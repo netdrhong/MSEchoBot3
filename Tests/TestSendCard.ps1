@@ -4,7 +4,7 @@ $botUrl = "https://anpteamsechobot2.azurewebsites.net" # Or your deployed bot UR
 $apiKey = "YOUR_SECURE_API_KEY_GOES_HERE"
 $chatId = "19:9a1b9b0c-9d11-4139-9807-446e5af06585_b07ee26b-4a6f-4b61-9a50-d92c8314bb13@unq.gbl.spaces" # Replace with a real Chat ID
 $channelId="oFCHAwq1Zwq_4COB14fAKOHAlC7xKCNqobm0alAfWRs1"
-$tenantId = "4851961a-a473-455d-840f-221dc8c83528" # Replace with your Tenant ID
+$tenantId = "TENANTID" # Replace with your Tenant ID
 
 # 2. Construct the request URI for the send-card endpoint
 $uri = "$botUrl/api/teamsmessage/send-card"
