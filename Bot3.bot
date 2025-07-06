@@ -1,0 +1,19 @@
+{
+    "name": "bot3",
+    "description": "",
+    "services": [
+        {
+            "type": "endpoint",
+            "name": "http://localhost:3978/api/messages",
+            "id": "5af491a0-593d-11f0-92d7-7b3bfdf780f2",
+            "appId": "",
+            "appPassword": "",
+            "tenantId": "",
+            "endpoint": "http://localhost:3978/api/messages"
+        }
+    ],
+    "padlock": "",
+    "version": "2.0",
+    "path": "C:\\Repos\\EchoBot3\\Bot3.bot",
+    "overrides": null
+}

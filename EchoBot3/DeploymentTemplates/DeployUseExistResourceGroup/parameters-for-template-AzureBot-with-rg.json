@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "azureBotId": {
+      "value": "anpTeamsEchoBot3"
+    },
+    "azureBotSku": {
+      "value": "F0"
+    },
+    "azureBotRegion": {
+      "value": "global"
+    },
+    "botEndpoint": {
+      "value": "https://anpteamsechobot2.azurewebsites.net/api/messages"
+    },
+    "appType": {
+      "value": "UserAssignedMSI"
+    },
+    "appId": {
+      "value": "402e6bf2-5cd7-405e-97c9-c9d98c9af236"
+    },
+    "UMSIName": {
+      "value": "anpechobotidentity"
+    },
+    "UMSIResourceGroupName": {
+      "value": "BotTestingResourceGroup"
+    },
+    "tenantId": {
+      "value": "4851961a-a473-455d-840f-221dc8c83528"
+    }
+  }
+}

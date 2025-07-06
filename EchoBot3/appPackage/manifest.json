@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.16",
+  "version": "1.0.1",
+  "id": "402e6bf2-5cd7-405e-97c9-c9d98c9af236",
+  "packageName": "com.yourcompany.echobot3",
+  "developer": {
+    "name": "ANP Tech",
+    "websiteUrl": "https://yourwebsite.com",
+    "privacyUrl": "https://yourwebsite.com/privacy",
+    "termsOfUseUrl": "https://yourwebsite.com/terms"
+  },
+  "name": {
+    "short": "EchoBot3",
+    "full": "EchoBot3 Teams Bot"
+  },
+  "description": {
+    "short": "A simple echo bot for Microsoft Teams.",
+    "full": "This bot echoes back any message it receives in Microsoft Teams."
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "accentColor": "#6264A7",
+  "bots": [
+    {
+      "botId": "402e6bf2-5cd7-405e-97c9-c9d98c9af236",
+      "scopes": [
+        "personal",
+        "team",
+        "groupchat"
+      ],
+      "supportsFiles": false,
+      "isNotificationOnly": false
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "anpteamsechobot2.azurewebsites.net",
+    "token.botframework.com"
+  ]
+}

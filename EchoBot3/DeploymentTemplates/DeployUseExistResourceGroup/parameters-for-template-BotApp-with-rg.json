@@ -1,0 +1,49 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "appServiceName": {
+      "value": "anpTeamsEchoBot2"
+    },
+    "existingAppServicePlanName": {
+      "value": "anpteamsbottesting01serviceplan"
+    },
+    "existingAppServicePlanLocation": {
+      "value": "eastus2"
+    },
+    "newAppServicePlanName": {
+      "value": ""
+    },
+    "newAppServicePlanLocation": {
+      "value": ""
+    },
+    "newAppServicePlanSku": {
+      "value": {
+        "name": "",
+        "tier": "",
+        "size": "",
+        "family": "",
+        "capacity": 1
+      }
+    },
+    "appType": {
+      "value": "UserAssignedMSI"
+    },
+    "appId": {
+      "value": "402e6bf2-5cd7-405e-97c9-c9d98c9af236"
+    },
+    "appSecret": {
+      "value": ""
+    },
+    "UMSIName": {
+      "value": "anpechobotidentity"
+
+    },
+    "UMSIResourceGroupName": {
+      "value": "BotTestingResourceGroup"
+    },
+    "tenantId": {
+      "value": "4851961a-a473-455d-840f-221dc8c83528"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "EchoBot3.Scheduler": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7102",
+      "launchBrowser": false
+    }
+  }
+}
