@@ -2,7 +2,7 @@
 
 # 1. Set your variables
 $botUrl = "https://anpteamsechobot2.azurewebsites.net" # Or your deployed bot URL: https://your-bot-app.azurewebsites.net
-$apiKey = "YOUR_SECURE_API_KEY_GOES_HERE"
+$apiKey = "TA22F532AF1E3BEBC52B15F1B4FA484UO"
 $chatId = "19:9a1b9b0c-9d11-4139-9807-446e5af06585_b07ee26b-4a6f-4b61-9a50-d92c8314bb13@unq.gbl.spaces" # Replace with a real Chat ID
 $tenantId = "TENANTID" # Replace with your Tenant ID
 

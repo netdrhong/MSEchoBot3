@@ -26,7 +26,7 @@ namespace EchoBot3.Scheduler
             logger.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
 
             var botApiUrl = _configuration["BotApiUrl"];
-            //var apiKey = _configuration["BotApiKey"];
+            var apiKey = _configuration["BotApiKey"];
             var chatId = _configuration["ChatId"];
             var serviceUrl = _configuration["ServiceUrl"];
             var tenantId = _configuration["TenantId"];
@@ -43,7 +43,7 @@ namespace EchoBot3.Scheduler
                 var request = new HttpRequestMessage(HttpMethod.Post, $"{botApiUrl}/api/teamsmessage/send");
 
                 // Add the security API key to the header
-                //request.Headers.Add("X-Api-Key", apiKey);
+                request.Headers.Add("X-Api-Key", apiKey);
 
                 // Create the JSON body
                 var jsonBody = $@"{{
