@@ -31,7 +31,7 @@ namespace EchoBot3.Scheduler
             var serviceUrl = _configuration["ServiceUrl"];
             var tenantId = _configuration["TenantId"];
 
-            if (string.IsNullOrEmpty(botApiUrl))// || string.IsNullOrEmpty(apiKey))
+            if (string.IsNullOrEmpty(botApiUrl) || string.IsNullOrEmpty(apiKey))
             {
                 logger.LogError("BotApiUrl or BotApiKey is not configured. Aborting.");
                 return;
