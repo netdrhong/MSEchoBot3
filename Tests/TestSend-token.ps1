@@ -1,5 +1,5 @@
 ﻿#Client Id: 55d0f5e9-be6e-4d7c-9456-9a3d3b6a81be
-#Key: N5g8Q~MMrY36QDAj_oxaVxtJoBkY_lqcuMjaodBn
+#Key: 
 $rawChatURL = "https://teams.microsoft.com/l/message/19:9a1b9b0c-9d11-4139-9807-446e5af06585_b07ee26b-4a6f-4b61-9a50-d92c8314bb13@unq.gbl.spaces/1751827017602?context=%7B%22contextType%22%3A%22chat%22%7D"
 
 # 1. Set your variables
