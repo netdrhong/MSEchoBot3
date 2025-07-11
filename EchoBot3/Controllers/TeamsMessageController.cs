@@ -1,5 +1,6 @@
 using EchoBot3.Authentication;
 using EchoBot3.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Integration.AspNet.Core;
@@ -7,6 +8,7 @@ using Microsoft.Bot.Connector.Authentication;
 using Microsoft.Bot.Schema;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Microsoft.Identity.Web.Resource;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
@@ -15,7 +17,8 @@ namespace EchoBot3.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [ApiKeyAuth]
+    [Authorize]
+    //[ApiKeyAuth]
     public class TeamsMessageController : ControllerBase
     {
 
@@ -24,6 +27,11 @@ namespace EchoBot3.Controllers
         private readonly IConfiguration _configuration;
         private readonly ILogger<TeamsMessageController> _logger;
         private readonly IBot _bot;
+
+        // Required scope from your App Registration
+        private const string SendMessagesScope = "Messages.Send";
+
+
         public TeamsMessageController(
             IBotFrameworkHttpAdapter adapter,
             IConfiguration configuration,
@@ -43,6 +51,8 @@ namespace EchoBot3.Controllers
         }
 
         [HttpPost("send")]
+        //[RequiredScope(SendMessagesScope)]
+        [Authorize(Policy = "RequireAppRole")]
         public async Task<IActionResult> SendMessage([FromBody] SendMessageRequest request)
         {
             try
@@ -102,6 +112,8 @@ namespace EchoBot3.Controllers
         }
 
         [HttpPost("send-card")]
+        //[RequiredScope(SendMessagesScope)]
+        [Authorize(Policy = "RequireAppRole")]
         public async Task<IActionResult> SendCardMessage([FromBody] SendMessageRequest request)
         {
             try
@@ -220,6 +232,7 @@ namespace EchoBot3.Controllers
 
         [HttpPost]
         [HttpGet]
+        [RequiredScope(SendMessagesScope)]
         public async Task PostAsync()
         {
             // Delegate the processing of the HTTP POST to the adapter.
