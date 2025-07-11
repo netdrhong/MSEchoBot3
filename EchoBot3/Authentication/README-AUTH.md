@@ -286,7 +286,7 @@ namespace EchoBot3
         "AzureWebJobsStorage": "UseDevelopmentStorage=true",
         "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
         "BotApiUrl": "https://anpteamsechobot2.azurewebsites.net",
-        "BotApiScope": "api://YOUR_API_CLIENT_ID/Messages.Send", // The scope you created
+        "BotApiScope": "api://YOUR_API_CLIENT_ID/.default", // The scope you created
         "ChatId": "...",
         "ServiceUrl": "...",
         "TenantId": "..."

@@ -34,7 +34,7 @@ $body = @{
 # Azure AD and Test Client Details
 $tenantId = "4851961a-a473-455d-840f-221dc8c83528"
 $clientId = "55d0f5e9-be6e-4d7c-9456-9a3d3b6a81be"         # The Application (client) ID of EchoBot3-TestClient
-$clientSecret = "N5g8Q~MMrY36QDAj_oxaVxtJoBkY_lqcuMjaodBn"      # The secret value you copied for EchoBot3-TestClient
+$clientSecret = "client secret"      # The secret value you copied for EchoBot3-TestClient
 
 # API and Target Channel Details
 #$botApiUrl = "http://localhost:3978"           # Your bot's deployed URL
