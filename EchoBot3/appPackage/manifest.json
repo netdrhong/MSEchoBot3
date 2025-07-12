@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
   "manifestVersion": "1.16",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "id": "402e6bf2-5cd7-405e-97c9-c9d98c9af236",
   "packageName": "com.yourcompany.echobot3",
   "developer": {
@@ -42,5 +42,11 @@
   "validDomains": [
     "anpteamsechobot2.azurewebsites.net",
     "token.botframework.com"
-  ]
+  ],
+  "defaultInstallScope": "team",
+  "defaultGroupCapability": {
+    "team": "bot",
+    "groupchat": "bot",
+    "meetings": "bot"
+  }
 }
